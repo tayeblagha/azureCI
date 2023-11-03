@@ -67,5 +67,6 @@ stages:
             displayName: 'Azure Web App Deploy: gs-spring-boot'
             inputs:
               appType: webAppLinux
+              azureSubscription: $(azureSubscription)
               appName: $(webAppName)
               package: '$(System.ArtifactsDirectory)/drop/**/target/*.?(war|jar)'
